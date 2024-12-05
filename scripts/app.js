@@ -1,17 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const contactForm = document.getElementById('contact-form');
-  
-  contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Armazenando dados no Local Storage
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-      
-      localStorage.setItem('contactData', JSON.stringify({ name, email, message }));
+// App JavaScript
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
 
-      alert("Formulário enviado!");
-      contactForm.reset(); // Resetando o formulário após o envio
-  });
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        console.log("Formulário enviado", Object.fromEntries(formData.entries()));
+        alert("Mensagem enviada com sucesso!");
+    });
 });

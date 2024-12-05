@@ -36,7 +36,7 @@ header .logo-container img {
 }
 
 nav {
-    margin-left: auto; 
+    margin-left: auto; /* Garante que o menu fique à direita */
 }
 
 nav ul {
@@ -127,7 +127,7 @@ nav ul li a:hover {
     }
 }
 
-
+/* NOTIFICAÇÃO - Efeito piscando para o texto "24h" */
 .notification p {
     font-size: 2rem;
     color: red;
@@ -148,7 +148,7 @@ nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px; 
+    width: 500px; /* Ajuste conforme necessário */
     z-index: 10;
 }
 
@@ -215,8 +215,8 @@ nav ul li a:hover {
 }
 
 .home-text .cta-button:hover {
-    background-color: #002060; 
-    color: #73ff57; 
+    background-color: #002060; /* Azul escuro ao passar o mouse */
+    color: #73ff57; /* Opcional: texto branco para melhor contraste */
 }
 
 
@@ -276,7 +276,7 @@ nav ul li a:hover {
     background-color: #ffffff;
     padding: 50px 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-top: 5px solid #73ff57; 
+    border-top: 5px solid #73ff57; /* Verde destacado */
     border-radius: 10px;
     max-width: 800px;
     margin: 50px auto;
@@ -286,7 +286,7 @@ nav ul li a:hover {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 40px;
-    color: #03057c; 
+    color: #03057c; /* Azul escuro */
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -311,16 +311,16 @@ form input, form textarea {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #4e09bd; 
+    border-color: #4e09bd; /* Roxo */
     outline: none;
     box-shadow: 0 0 8px rgba(78, 9, 189, 0.4);
-    background-color: #ffffff; 
+    background-color: #ffffff; /* Destaque ao focar */
 }
 
 form button {
     padding: 15px 20px;
-    background-color: #73ff57; 
-    color: #03057c; 
+    background-color: #73ff57; /* Verde do CTA */
+    color: #03057c; /* Azul escuro */
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -338,16 +338,27 @@ form button:hover {
 
 form textarea {
     min-height: 150px; 
+}
 
 footer {
-    background-color: #03057c;
-    color: white;
+    background-color: #f8f409; /* Cor igual ao cabeçalho */
+    color: rgb(28, 8, 114);
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
+    
 }
 
 footer p {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Aumentei o tamanho da fonte para dar mais destaque */
     margin-top: 10px;
+    font-weight: bold; /* Tornando o texto mais destacado */
 }
+
+footer a {
+    color: white; /* Caso queira adicionar links no rodapé */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
